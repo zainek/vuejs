@@ -1,4 +1,5 @@
-# vuejs
+![VueJS Logo](https://cdn.iconscout.com/icon/free/png-256/vue-282497.png)
+
 No matter at which metric you look at (Google Trends, Github Stars, Tweets ...) - VueJS is the shooting star in the world of JavaScript frameworks - it simply is amazing!
 
 The purpose of this repository is to document my learning of the latest version of Vue (Vue.js 3) from the ground up and in great detail.

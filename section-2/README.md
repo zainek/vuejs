@@ -1,3 +1,5 @@
+![VueJS Logo](https://cdn.iconscout.com/icon/free/png-256/vue-282497.png)
+
 # Basics and Core Concepts - DOM Interaction with Vue
 
 In this section, I am learning about the basics of Vue and the core concepts behind the Vue framework, including:
