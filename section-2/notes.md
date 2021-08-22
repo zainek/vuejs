@@ -1,3 +1,3 @@
-![alt text] (https://www.pngfind.com/pngs/m/150-1507248_image-library-stock-file-vue-js-logo-wikimedia.png)
+![VueJS logo](https://cdn.iconscout.com/icon/free/png-256/vue-282497.png)
 
 # Basics and Core Concepts - DOM Interaction with Vue Notes
