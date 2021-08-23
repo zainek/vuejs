@@ -1,4 +1,4 @@
-![VueJS logo](https://cdn.iconscout.com/icon/free/png-256/vue-282497.png =100x100)
+<img src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" width="100">
 
 # Basics and Core Concepts - DOM Interaction with Vue Notes
 

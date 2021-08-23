@@ -1,4 +1,4 @@
-![VueJS logo](https://cdn.iconscout.com/icon/free/png-256/vue-282497.png =100x100)
+<img src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" width="100">
 
 # Getting Started with Vue
 In this section, I explore the what view is and look at a simple example of interacting with the DOM using vanilla JavaScript

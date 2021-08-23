@@ -1,4 +1,5 @@
-![VueJS Logo](https://cdn.iconscout.com/icon/free/png-256/vue-282497.png =100x100)
+<img src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" width="100">
+
 # Learning Vue.JS
 
 No matter at which metric you look at (Google Trends, Github Stars, Tweets ...) - VueJS is the shooting star in the world of JavaScript frameworks - it simply is amazing!
