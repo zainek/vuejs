@@ -22,10 +22,13 @@ A resevered name which is recognised and detected by Vue, and lets Vue know to s
 ### Vue methods
 Methods are another option which we can set on the Vue app instance. Methods allow us to define functions to execute when something happens (when called or a user event occurs).
 
-Methods is a JavaScript object which contains functions which should be callable i.e
+The Vue methods app property is a JavaScript object which contains a list of callable functions which can be defined in key-value pairs or as named methods i.e
 ```
 methods: {
-    someFunction: function() {...}
+    /* function defined using key-value paris */
+    someFunction: function() {...},
+
+    /* function defined using named function syntax */
     anotherFunction() {...}
 }
 ```
