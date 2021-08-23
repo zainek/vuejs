@@ -1,26 +1,28 @@
-![VueJS Logo](https://cdn.iconscout.com/icon/free/png-256/vue-282497.png)
+![VueJS logo](https://cdn.iconscout.com/icon/free/png-256/vue-282497.png =100x100)
 
 # Basics and Core Concepts - DOM Interaction with Vue
 
-In this section, I am learning about the basics of Vue and the core concepts behind the Vue framework, including:
-- creating and connecting a Vue app instances
-- the basics of interpolation and data-binding
-- binding HTML attributes with the v-bind directive
-- understanding "methods" in a Vue app
-- working with data inside of a Vue app
-- outputing raw HTML content with the v-html directive
-- understanding event binding
-- understanding events and methods
-- working with event arguments
-- using the native event object
-- exploring event modifiers
-- locking content with v-once directive
+In this section, I will be familiarising myself with and learning about the basics of Vue and the core concepts behind the framework.
+This section will provide me with a solid foundation to further progress my learning into more details about the core concepts behind 
+Vue and build on the basics. This section will cover the basics on the following topics:
+- Creating and connecting a Vue app instances
+- The basics of interpolation and data-binding
+- Binding HTML attributes with the v-bind directive
+- Understanding "methods" in a Vue app
+- Working with data inside of a Vue app
+- Outputing raw HTML content with the v-html directive
+- Understanding event binding
+- Understanding events and methods
+- Working with event arguments
+- Using the native event object
+- Exploring event modifiers
+- Locking content with v-once directive
 - 2-way data binding with event binding and data binding
-- introduction to computed properties
-- working with watchers
-- comparing methods, computed properties and watchers
+- Introduction to computed properties
+- Working with watchers
+- Comparing methods, computed properties and watchers
 - v-bind and v-on shorthands
-- dynamic styling with inline styles
-- adding CSS classes dynamically
-- classes and computed properties
-- dynamic CSS classes using the Array syntax
+- Dynamic styling with inline styles
+- Adding CSS classes dynamically
+- Classes and computed properties
+- Dynamic CSS classes using the Array syntax
