@@ -57,10 +57,8 @@ or when using the v-bind directive
 <a v-bind:href="outputGoal()">Learn Vue</a>
 ```
 
-## Notes
-- Behind the scenes, Vue makes all the data being returned by the data Vue app property and merges it into a global Vue instances 
-of the Vue app. This allows us to be able to reference any of our data properties in any of the methods, computedProperties and watchers
-we define using the JavaScript `this` keyword.
+## _Important_
+- Behind the scenes, Vue merges the Vue app data it into a single global Vue instance. This allows us to be able to reference any of our data properties in any of the methods, computedProperties and watchers we define using the JavaScript `this` keyword.
 ```javascript
 data() {
     return {
