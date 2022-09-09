@@ -16,13 +16,13 @@ Using interpolation with Vue, we can also execut basic JavaScript expression, us
 
 ### v-bind directive
 A resevered name which is recognised and detected by Vue, and lets Vue know to set the value of an HTML attribute with dynamic data.
-Interpolation is *only* available between HTML elements, use the v-bind directive to pass dynamic values to an HTML element attribute. 
+Interpolation is *only* available between HTML elements, use the v-bind directive to pass dynamic values to an HTML element attribute.
 ```
 <a v-bind:href-"vueLink">learn Vue</a>
 ```
 
 ### v-html directive
-By default Vues interpolation treats everyting as a string, even HTML mark-up. This is an added securty feature for our Vue applications as it protects 
+By default Vues interpolation treats everyting as a string, even HTML mark-up. This is an added securty feature for our Vue applications as it protects
 X-Site Scripting (XSS). However, Vue also provides us with the `v-html` directive that lets Vue know the content being set between the HTML tags should
 be interpreted as HTML.
 
@@ -33,6 +33,27 @@ When using the `v-html` directive, we don't use the mustache syntax. Instead we 
 
 <!-- or call a method function -->
 <p v-html="outputGoal()"></p>
+```
+
+### v-on directive
+The `v-on` directive is used to add event listeners to an HTML element which is managed within a Vue app. `v-on` takes a single argument after a semicolon and that is
+the user event that we want to listen for. The `v-on` directive supports all the standard events you can listen for on an HTML element with vanilla JavaScript.
+
+With `v-on` we are also able to execute simple JavaScript code within the Vue managed HTML similar to the `v-bind` directive between the double curly braces `{{  }}`.
+```
+<button v-on:click="counter++">Add</button>
+<button v-on:click="counter--">Reduce</button>
+```
+
+### v-model
+Called 2-way Data Binding, `v-model` directive is a useful shorthand for listening and setting the value of an input. It can be used to replace the `v-bind` and `v-on` Vue directives for an input
+when we want to listen for changes to the value of an input, and update the stored value of a data property at the same time.
+```
+<input type="text" v-model="name">
+```
+Instead of:
+```
+<input type="text" v-bind:value="name" v-on:input="setName($event, lastName)">
 ```
 
 ### Vue methods
@@ -48,7 +69,7 @@ methods: {
     anotherFunction() {...}
 }
 ```
-With methods, we are able to call methods we defined in our Vue app using interpolation 
+With methods, we are able to call methods we defined in our Vue app using interpolation
 ```
 <p>{{ outputGoal() }}</p>
 ```
@@ -56,6 +77,13 @@ or when using the v-bind directive
 ```
 <a v-bind:href="outputGoal()">Learn Vue</a>
 ```
+
+>_However, it is important to note that we should not use methods to output information to the page, as this can lead to potential performance issues. By nature, Vue will only update the parts of the page where a change is detected. When we use a method to output any information on the page, Vue doesn't know which data properties are effected within the method, so the method will be run everytime any data property in the app is changed._ 
+
+### Computed Properties
+Computed Properties are essentially the same as methods with one important difference. Vue is aware of their dependencies and will only re-execute them if one of their dependencies changed.
+
+Similar to methods, Computed Properties returns an object of methods. The methods defined in Computed Properties should be named like data properties, as they are used like a data property and not like a method (we don't call Computed Properties methods).
 
 ## _Important_
 - Behind the scenes, Vue merges the Vue app data it into a single global Vue instance. This allows us to be able to reference any of our data properties in any of the methods, computedProperties and watchers we define using the JavaScript `this` keyword.
@@ -71,3 +99,6 @@ methods: {
     }
 }
 ```
+- A core feature of VueJS is the built-in functionality which handles the creation of event listeners on HTML elements, the managing of data in the app we specify
+and only updating the parts of the page where required when any changes happen to the data - built-in reactivity.
+_It's a core concept which is important to know and understand as a developer._
