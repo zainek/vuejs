@@ -78,7 +78,7 @@ or when using the v-bind directive
 <a v-bind:href="outputGoal()">Learn Vue</a>
 ```
 
->_However, it is important to note that we should not use methods to output information to the page, as this can lead to potential performance issues. By nature, Vue will only update the parts of the page where a change is detected. When we use a method to output any information on the page, Vue doesn't know which data properties are effected within the method, so the method will be run everytime any data property in the app is changed._ 
+>_However, it is important to note that we **should not** use methods to output information to the page, as this can lead to potential performance issues. By nature, Vue will only update the parts of the page where a change is detected. When we use a method to output any information on the page, Vue doesn't know which data properties are effected within the method, so the method will be run everytime any data property in the app is changed._
 
 ### Computed Properties
 Computed Properties are essentially the same as methods with one important difference. Vue is aware of their dependencies and will only re-execute them if one of their dependencies changed.
