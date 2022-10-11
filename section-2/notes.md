@@ -22,7 +22,7 @@ Interpolation is *only* available between HTML elements, use the v-bind directiv
 ```
 
 ### v-html directive
-By default Vues interpolation treats everyting as a string, even HTML mark-up. This is an added securty feature for our Vue applications as it protects
+By default Vues interpolation treats everything as a string, even HTML mark-up. This is an added securty feature for our Vue applications as it protects
 X-Site Scripting (XSS). However, Vue also provides us with the `v-html` directive that lets Vue know the content being set between the HTML tags should
 be interpreted as HTML.
 
