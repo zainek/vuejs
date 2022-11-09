@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics - Dynamic Styling With Inline Styles</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Vue Dynamic Styling</h1>
+    </header>
+    <section id="styling">
+        <!-- Dynamic inline styles using v-bind on the style attribute -->
+        <div class="demo" :style="{borderColor: boxASelected ? 'red' : '#ccc'}" @click="boxSelected('A')"></div>
+
+        <!-- Dynamic styles by binding classes using v-bind on the class attribute -->
+        <div :class="{demo: true, active: boxBSelected}" @click="boxSelected('B')"></div>
+
+        <!-- Dynamic classes using v-bind on the class attribute and Computed properties -->
+        <div class="demo" :class="boxCClasses" @click="boxSelected('C')"></div>
+
+        <!-- Dynamic classes using v-bind and the array syntax on the class attribute -->
+        <div :class="['demo', boxDClasses]" @click="boxSelected('D')"></div>
+    </section>
+</body>
+</html>
