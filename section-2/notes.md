@@ -76,7 +76,7 @@ and we can also call the method explicitly or simply point at it like so;
 >_However, it is important to note that we **should not** use methods to output information to the page, as this can lead to potential performance issues. By nature, Vue will only update the parts of the page where a change is detected. When we use a method to output any information on the page, Vue doesn't know which data properties are effected within the method, so the method will be run everytime any data property in the app is changed._
 
 
-## Events
+## Event Handling
 >_A core feature of VueJS is the built-in functionality which handles the creation of event listeners on HTML elements, the managing of data in the app we specify
 and only updating the parts of the page where required when any changes happen to the data - built-in reactivity.
 It's a core concept which is important to know and understand as a developer._
